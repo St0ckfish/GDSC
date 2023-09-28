@@ -541,6 +541,11 @@ section {
     .main h2 span {
         font-size: 35px;
     }
+    svg {
+        top: 29px;
+        right: 45px;
+        width: calc(7% + 82px);
+    }
 }
 
 @media (max-width:535px) {
@@ -563,6 +568,18 @@ section {
     .contact_section .containerl input {
         width: 230px;
       }
+      svg {
+        top: -8px;
+        right: -150px;
+    }
+    
+}
+
+@media (min-width:413px) and (max-width:436px){
+    svg {
+        top: 24px;
+        right: 46px;
+    }
 
 }
 
@@ -574,5 +591,8 @@ section {
     .contact_section .containerl input {
         width: 230px;
       }
+      .video video{
+        width: 250px;
+    }
     
 }
