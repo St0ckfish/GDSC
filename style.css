@@ -9,6 +9,30 @@
     scroll-behavior: smooth;
 }
 
+svg {
+    fill: none;
+    stroke: #7090c9;
+    stroke-width: 2px;
+    stroke-miterlimit: 11;
+    stroke-dasharray: 353;
+    stroke-dashoffset: 358;
+    stroke-linecap: round;
+    position: relative;
+    top: 39px;
+    right: 58px;
+    width: calc(7% + 117px);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+    z-index: 0;
+  }
+
+  .me:hover svg {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
 section{
     background-color:whitesmoke;
 }
